@@ -1,0 +1,225 @@
+:root {
+  --azul: #0b6fd6;
+  --azul-oscuro: #0a4f9e;
+  --amarillo: #ffc220;
+  --gris-fondo: #f2f4f7;
+  --texto: #1f2937;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado azul */
+.App-header {
+  background-color: var(--azul);
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.marca-acento {
+  color: var(--amarillo);
+}
+
+.App-header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Franja azul oscura bajo el encabezado */
+.franja {
+  background-color: var(--azul-oscuro);
+  color: white;
+  text-align: right;
+  padding: 8px 24px;
+  font-size: 0.9rem;
+}
+
+.contenido {
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 16px 90px; /* espacio para el menú inferior */
+  box-sizing: border-box;
+}
+
+/* Banners (azul y amarillo) */
+.banners {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.banner {
+  flex: 1;
+  min-width: 260px;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+}
+
+.banner strong {
+  font-size: 1.4rem;
+}
+
+.banner-azul {
+  background-color: var(--azul);
+  color: white;
+}
+
+.banner-azul strong {
+  color: var(--amarillo);
+}
+
+.banner-amarillo {
+  background-color: var(--amarillo);
+  color: #1f2937;
+}
+
+.banner-amarillo strong {
+  color: var(--azul-oscuro);
+}
+
+/* Resumen del inventario */
+.resumen {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.tarjeta {
+  flex: 1;
+  min-width: 140px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta .numero {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--azul);
+}
+
+/* Buscador redondeado con botón amarillo */
+.buscador-caja {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 4px 4px 4px 16px;
+  margin-bottom: 14px;
+}
+
+.buscador {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.buscador-icono {
+  background-color: var(--amarillo);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tabla */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.tabla th,
+.tabla td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.tabla th {
+  background-color: #e6f0fb;
+  color: var(--azul-oscuro);
+}
+
+.stock-bajo {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.tabla button,
+.boton {
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-right: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tabla button:hover,
+.boton:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.mensaje {
+  text-align: center;
+  color: #666;
+}
+
+
+.menu-inferior {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  background-color: var(--azul-oscuro);
+  padding: 8px 24px;
+}
+
+.menu-inferior a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+
+.menu-inferior a:hover {
+  background-color: var(--azul);
+}
+
+.menu-inferior a.activo {
+  background-color: var(--amarillo);
+  color: #1f2937;
+  font-weight: bold;
+}
