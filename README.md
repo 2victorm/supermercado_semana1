@@ -1,8 +1,5 @@
 # Supermercado - Gestión de inventario
 
-Actividad formativa 1 - Desarrollo Frontend II (PFY2202)
-"Utilizando tecnologías avanzadas de React en sitios web"
-
 Sitio web de gestión de inventario para un supermercado, desarrollado con
 React, Vite y React Router.
 
@@ -44,7 +41,3 @@ src/
   index.css
   main.jsx
 ```
-
-## Autor
-
-Victor Marambio - Duoc UC
